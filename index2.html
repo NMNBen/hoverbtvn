@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://vcdn1-dulich.vnecdn.net/2022/01/27/Cac-day-nui-o-thung-lung-Bac-S-4665-9485-1643297662.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=8qjYueakNjGxh2xlR4Ny6A') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .text {
+            font-size: 80px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+            font-family:Arial, Helvetica, sans-serif  ;
+        }
+
+        .diamond {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 600px;
+            height: 600px;
+            border: 5px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .diamond .icons {
+            transform: rotate(-45deg);
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 10px; 
+            margin-top: 80px;
+            margin-left: 100px;
+            height: 60%;
+            width: 60%; 
+        }
+
+        .diamond .icons i {
+            font-size: 80px;
+            flex: 1 1 40%; 
+            text-align: center; 
+        }
+
+        .container:hover .text {
+            opacity: 0;
+        }
+
+        .container:hover .diamond {
+            opacity: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">TENDER <span style="font-weight: 800; ">HERA</span></div>
+        <div class="diamond">
+            <div class="icons">
+                <i class="fa-regular fa-file"></i>
+                <i class="fas fa-image"></i>
+                <i class="fas fa-flask"></i>
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
